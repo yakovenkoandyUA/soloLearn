@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.parent {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+	grid-template-columns: repeat(3, 200px);
+	justify-content: center;
+	/* grid-template-rows: 100px 250px 100px; */
+}
+
+.child {
+	padding: 50px;
+	background-color: greenyellow;
+	border: 2px solid black;
+}
