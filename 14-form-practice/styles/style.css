@@ -6,7 +6,7 @@
 	height: 100vh;
 	border: 10px solid var(--main-color);
 	box-sizing: border-box;
-	padding: 100px 40px;
+	padding: 60px;
 }
 
 .wrapper__img {
@@ -154,6 +154,7 @@ label[for='policy'] {
 	border: 1px solid #c4c4c4;
 
 	position: relative;
+
 }
 
 .subscribe__custom-policy::after {
@@ -162,9 +163,9 @@ label[for='policy'] {
 
 	width: 17px;
 	height: 2px;
-	background-color: var(--main-color);
 	transition: opacity 0.5s ease-in-out;
 	opacity: 0;
+	background-color: var(--main-color);
 
 	transform: rotate(125deg);
 	top: 8px;
@@ -176,9 +177,9 @@ label[for='policy'] {
 	position: absolute;
 
 	height: 2px;
-	background-color: var(--main-color);
 	transition: opacity 0.5s ease-in-out;
 	opacity: 0;
+	background-color: var(--main-color);
 
 	width: 8px;
 	transform: rotate(55deg);
@@ -186,9 +187,37 @@ label[for='policy'] {
 	left: 2px;
 }
 
+.subscribe__field-policy:checked + .subscribe__custom-policy::after {
+	opacity: 1;
+}
+.subscribe__field-policy:checked + .subscribe__custom-policy::before {
+	opacity: 1;
+}
+
+.subscribe__field-policy:not(:checked) + .subscribe__custom-policy::after {
+	opacity: 0;
+}
+.subscribe__field-policy:not(:checked) + .subscribe__custom-policy::before {
+	opacity: 0;
+}
 
 .subscribe__policy-text {
 	font-size: 15px;
 	line-height: 24px;
 	color: #c4c4c4;
+	width: 280px;
+}
+
+.subscribe__submit {
+	padding-top: 14px;
+	padding-bottom: 12px;
+	width: 100%;
+	background-color: var(--main-color);
+
+	font-size: 24px;
+	font-weight: 800;
+	color: #fff;
+
+	border-radius: 25px;
+	border: none;
 }
