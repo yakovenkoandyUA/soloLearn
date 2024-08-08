@@ -1,0 +1,31 @@
+.title {
+    font-family: sans-serif;
+    text-align: center;
+
+    position: relative;
+}
+
+.title::after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: black;
+
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+}
+.title::before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: black;
+    
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: rotate(90deg);
+}
+
+/* .line {
+} */

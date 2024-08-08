@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/style.css" />
+	</head>
+	<body>
+		<section class="wrapper">
+			<img class="wrapper__img" src="./img/header.png" alt="header" />
+
+			<h1 class="wrapper__title">Tropical Inspire</h1>
+
+			<form class="subscribe">
+				<label class="subscribe__label">
+					<p class="subscribe__label-text">Description</p>
+					<input class="subscribe__field" type="text" required />
+				</label>
+				<label class="subscribe__label">
+					<p class="subscribe__label-text">Topic</p>
+					<input class="subscribe__field" type="text" required />
+				</label>
+				<label class="subscribe__label">
+					<p class="subscribe__label-text">Colaborators</p>
+					<div class="subscribe__file">
+						<img class="subscribe__file-img" src="./img/collab.png" alt="colab" />
+						<button class="subscribe__file-btn">+</button>
+					</div>
+				</label>
+				<label class="subscribe__label-checkbox" for="add-people">
+					<p class="subscribe__label-text">Colaborators can</p>
+					<div class="subscribe__add-people">
+						<p class="subscribe__add-people__text">Add more people</p>
+						<div class="custom-checkbox__wrapper">
+							<input type="checkbox" id="add-people" class="custom-checkbox__input" />
+							<div class="custom-checkbox__toggler"></div>
+						</div>
+					</div>
+				</label>
+				<label class="subscribe__label-checkbox" for="join">
+					<p class="subscribe__label-text">People can</p>
+					<div class="subscribe__add-people">
+						<p class="subscribe__add-people__text">Request to join</p>
+						<div class="custom-checkbox__wrapper">
+							<input type="checkbox" id="join" class="custom-checkbox__input" />
+							<div class="custom-checkbox__toggler"></div>
+						</div>
+					</div>
+				</label>
+				<label for="policy" class="subscribe__label">
+					<input class="subscribe__field-policy" type="checkbox" id="policy" />
+					<p class="subscribe__policy-text">Send me updates about Tropical Inspire products and services. Privacy policy</p>
+				</label>
+                <button type="submit" class="subscribe__submit">continue</button>
+			</form>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,194 @@
+:root {
+	--main-color: #e24429;
+}
+
+.wrapper {
+	height: 100vh;
+	border: 10px solid var(--main-color);
+	box-sizing: border-box;
+	padding: 100px 40px;
+}
+
+.wrapper__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper__title {
+	width: 86px;
+	font-weight: bold;
+	font-size: 24px;
+	color: var(--main-color);
+	font-family: sans-serif;
+	margin-bottom: 10px;
+}
+
+.subscribe {
+	width: 320px;
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+
+.subscribe__label,
+.subscribe__label-checkbox {
+	display: block;
+}
+
+.subscribe__label:not(:nth-child(6)) {
+	margin-bottom: 21px;
+}
+
+.subscribe__label:nth-child(6) {
+	margin-bottom: 12px;
+}
+
+.subscribe__label-checkbox {
+	margin-bottom: 47px;
+}
+
+.subscribe__label-text {
+	line-height: 24px;
+	letter-spacing: 0.05em;
+	color: #c4c4c4;
+	margin-bottom: 8px;
+	transition: color 0.5s ease-in-out;
+}
+
+.subscribe__label:hover .subscribe__label-text {
+	color: var(--main-color);
+}
+
+.subscribe__field {
+	width: 100%;
+	border-radius: 10px;
+	padding: 16px;
+	border: none;
+	outline: none;
+	border: 1px solid #e5e5e5;
+	transition: border-color 0.5s ease-in-out;
+	box-shadow: 4px 10px 20px 0px #0000001a;
+
+	font-size: 18px;
+	line-height: 24px;
+	color: #666666;
+	box-sizing: border-box;
+}
+
+.subscribe__field:focus {
+	border-color: var(--main-color);
+}
+
+.subscribe__file-btn {
+	padding: 6px 9px;
+	border-radius: 50%;
+	background-color: var(--main-color);
+	color: #fff;
+	border: none;
+}
+
+.subscribe__file,
+.subscribe__add-people {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.subscribe__add-people__text {
+	font-size: 24px;
+	color: #666666;
+}
+
+.custom-checkbox__input {
+	display: none;
+}
+
+.custom-checkbox__toggler {
+	width: 44px;
+	height: 24px;
+	border-radius: 20px;
+	background-color: var(--main-color);
+
+	position: relative;
+}
+
+.custom-checkbox__toggler::after {
+	content: '';
+	/* Розташування кружечка відносно фону */
+	position: absolute;
+	left: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+	/* ============ */
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border-radius: 50%;
+
+	transition: left 0.5s;
+}
+
+.custom-checkbox__input:checked + .custom-checkbox__toggler::after {
+	left: 22px;
+}
+
+.custom-checkbox__input:not(:checked) + .custom-checkbox__toggler::after {
+	left: 2px;
+}
+
+label[for='policy'] {
+	display: flex;
+	gap: 5px;
+}
+
+.subscribe__field-policy {
+	display: none;
+}
+
+.subscribe__custom-policy {
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	border: 1px solid #c4c4c4;
+
+	position: relative;
+}
+
+.subscribe__custom-policy::after {
+	content: '';
+	position: absolute;
+
+	width: 17px;
+	height: 2px;
+	background-color: var(--main-color);
+	transition: opacity 0.5s ease-in-out;
+	opacity: 0;
+
+	transform: rotate(125deg);
+	top: 8px;
+	left: 4px;
+}
+
+.subscribe__custom-policy::before {
+	content: '';
+	position: absolute;
+
+	height: 2px;
+	background-color: var(--main-color);
+	transition: opacity 0.5s ease-in-out;
+	opacity: 0;
+
+	width: 8px;
+	transform: rotate(55deg);
+	top: 11px;
+	left: 2px;
+}
+
+
+.subscribe__policy-text {
+	font-size: 15px;
+	line-height: 24px;
+	color: #c4c4c4;
+}
