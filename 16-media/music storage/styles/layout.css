@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #AB0433;
+    --btn-color: #FF753A;
+    --dark-bg: #252525;
+    --light-bg: #eaeaea;
+    --fonts-rule: 'Work Sans', sans-serif;
+}
+
+body {
+    font-family: var(--fonts-rule);
+}
+
+
+.title__h4 {
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: bold;
+    color: #212121;
+}
+
+.title__h6 {
+    font-size: 20px;
+    line-height: 130%;
+    font-weight: 600;
+    color: #212121;
+}
+
+.section__title {
+    font-size: 40px;
+    line-height: 120%;
+    color: #505050;
+    font-weight: bold;
+    text-align: center;
+
+    position: relative;
+}
+
+.section__title::after {
+    /* * Стилі створення елемента */
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: var(--primary-color);
+    
+    /* * Стилі для позиціонування елемента */
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+}

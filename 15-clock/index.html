@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clock</title>
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/main.css" />
+	</head>
+	<body data-theme="dark">
+		<div class="services container">
+			<button class="services__add"></button>
+			<button class="services__edit">
+				<svg class="services__edit-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M20 3.86139L15.4 0L14.1 1.48515L18.7 5.34653L20 3.86139ZM5.9 1.58416L4.6 0.0990099L0 3.86139L1.3 5.34653L5.9 1.58416ZM10.5 6.13861H9V12.0792L13.7 14.9505L14.5 13.7624L10.5 11.3861V6.13861ZM10 2.17822C5 2.17822 1 6.13861 1 11.0891C1 16.0396 5 20 10 20C15 20 19 16.0396 19 11.0891C19 6.13861 15 2.17822 10 2.17822ZM10 18.0198C6.1 18.0198 3 14.9505 3 11.0891C3 7.22772 6.1 4.15842 10 4.15842C13.9 4.15842 17 7.22772 17 11.0891C17 14.9505 13.9 18.0198 10 18.0198Z"
+						fill="#000"
+					/>
+				</svg>
+			</button>
+		</div>
+		<div class="tabs container">
+			<div class="tabs__content">
+				<div class="tabs__content-item">
+
+					<svg class="tabs__clock"  width="375" height="407" viewBox="0 0 375 407" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g filter="url(#filter0_dd_1_21)">
+							<circle cx="185" cy="208" r="146" fill="#15264F" />
+						</g>
+						<circle cx="184.418" cy="207.418" r="121.641" stroke="#51638D" stroke-width="8" stroke-miterlimit="16" stroke-dasharray="1 60" />
+						<circle cx="184.418" cy="207.418" r="124.641" stroke="#51638D" stroke-width="2" stroke-miterlimit="16" stroke-dasharray="1 10" />
+						<circle cx="185" cy="208" r="113.426" fill="#22345E" />
+						<rect x="173.948" y="205.092" width="93.0677" height="4.65339" rx="2.32669" fill="white" />
+						<rect x="191.986" y="197.481" width="58.1673" height="4.65339" rx="2.32669" transform="rotate(111.372 191.986 197.481)" fill="white" />
+						<rect x="181.935" y="196.948" width="104.701" height="3.49004" rx="1.74502" transform="rotate(68.8659 181.935 196.948)" fill="#DA2E7C" />
+						<circle cx="185" cy="208" r="5.23506" fill="#DA2E7C" />
+						<defs>
+							<filter id="filter0_dd_1_21" x="-60" y="0" width="466" height="407" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+								<feMorphology radius="15" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_1_21" />
+								<feOffset dx="-44" dy="-7" />
+								<feGaussianBlur stdDeviation="20" />
+								<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_21" />
+								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+								<feMorphology radius="9" operator="dilate" in="SourceAlpha" result="effect2_dropShadow_1_21" />
+								<feOffset dx="36" dy="14" />
+								<feGaussianBlur stdDeviation="15" />
+								<feColorMatrix type="matrix" values="0 0 0 0 0.0901961 0 0 0 0 0.184314 0 0 0 0 0.415686 0 0 0 0.6 0" />
+								<feBlend mode="normal" in2="effect1_dropShadow_1_21" result="effect2_dropShadow_1_21" />
+								<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_1_21" result="shape" />
+							</filter>
+						</defs>
+					</svg>
+
+                    <h2 class="tabs__content-title">Kiyv</h2>
+
+                    <p class="tabs__content-time">
+                        <span>16</span>
+                        :
+                        <span>14</span>
+                        <span>PM</span>
+                    </p>
+                    
+				</div>
+                <div class="tabs__content-item active">
+                    <ul class="tabs__info">
+						<li class="tabs__info-item">
+							<p class="tabs__info-day">Chicago</p>
+							<p class="tabs__info-time">04:15 AM</p>
+						</li>
+						<li class="tabs__info-item">
+							<p class="tabs__info-day">Chicago</p>
+							<p class="tabs__info-time">04:15 AM</p>
+						</li>
+						<li class="tabs__info-item">
+							<p class="tabs__info-day">Chicago</p>
+							<p class="tabs__info-time">04:15 AM</p>
+						</li>
+					</ul>
+                </div>
+			</div>
+			<ul class="tabs__list">
+				<li class="tabs__list-item active">Clock</li>
+				<li class="tabs__list-item">List</li>
+				<li class="tabs__list-item">Settings</li>
+			</ul>
+		</div>
+	</body>
+</html>
