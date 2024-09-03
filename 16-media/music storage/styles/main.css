@@ -1,0 +1,59 @@
+.main__background {
+	background-image: url(../images/bg-mob.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.container {
+	max-width: 328px;
+	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.main__background {
+		background-image: url(../images/bg-tab.png);
+	}
+
+	.container {
+		max-width: 724px;
+	}
+}
+
+@media (min-width: 1225px) {
+	.main__background {
+		background-image: url(../images/bg-desktop.png);
+	}
+	.container {
+		max-width: 1280px;
+	}
+}
+
+.head {
+    padding-top: 58px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.burger {
+	width: 24px;
+	height: 24px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.burger__line {
+	height: 2px;
+	background-color: #fff;
+}
+
+.head__menu {
+	display: none;
+}
+
+.head__services {
+	display: none;
+}
