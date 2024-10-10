@@ -1,0 +1,19 @@
+// header {
+//     @include flexbox-layout
+// }
+
+// h1 {
+//     @include main-title
+// }
+
+header {
+	@include grid-column8;
+}
+
+footer {
+	@include flexbox-layout;
+}
+
+main {
+	@include grid-column6;
+}

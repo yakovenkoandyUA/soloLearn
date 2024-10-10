@@ -1,0 +1,21 @@
+@mixin flexbox-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin grid-column8 {
+    display: grid;
+    grid-template-columns: repeat(8 ,1fr);
+}
+@mixin grid-column6 {
+    display: grid;
+    grid-template-columns: repeat(6 ,1fr);
+}
+
+@mixin main-title {
+    color: #212121;
+    font-size: 44px;
+    font-weight: 800;
+}
+
