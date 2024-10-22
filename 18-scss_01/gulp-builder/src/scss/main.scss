@@ -1,2 +1,19 @@
 // * Це головний sass/scss файл проекту
 // * імпортуйте сюди всі інші ваші файли sass/scss
+
+@import './helpers/reset.scss';
+@import './helpers/variable.scss';
+@import './helpers/mixins.scss';
+
+@import './components/index.scss';
+
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    box-sizing: border-box
+}
+
+
+@import './sections/header.scss';
+@import './sections/hero.scss';

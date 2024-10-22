@@ -1,0 +1,11 @@
+@mixin flexbox($horizontal: flex-start, $vertical: center) {
+	display: flex;
+	justify-content: $horizontal;
+	align-items: $vertical;
+}
+
+@mixin gridLayout($column, $gap, $size: 1fr) {
+	display: grid;
+	grid-template-columns: repeat($column, $size);
+	column-gap: $gap;
+}
