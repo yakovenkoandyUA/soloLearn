@@ -1,0 +1,36 @@
+.promo {
+    padding-top: 533px;
+    padding-bottom: 40px;
+
+    background-image: url(../images/promo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+
+    &__title {
+        @include sectionTitle('true');
+        margin-bottom: 24px;
+        display: inline-block;
+    }
+
+    &__subtitle {
+        font-size: 64px;
+        font-weight: bold;
+        width: 704px;
+        margin-bottom: 27px;
+        margin-inline: auto;
+        color: #fff;
+    }
+    
+    &__text {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 39px;
+        width: 930px;
+        margin-inline: auto;
+        color: #fff;
+    }
+}

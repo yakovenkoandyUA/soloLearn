@@ -1,0 +1,527 @@
+:root {
+	--root-gradient: linear-gradient(134.72deg, #7474bf 0%, #348ac7 101.5%);
+}
+
+.theme-light {
+	--main-color: #fff;
+}
+
+.theme-dark {
+	--main-color: #131a34;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	max-width: 335px;
+	margin: 0 auto;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+.start-page {
+	position: absolute;
+	inset: 0;
+	background-color: var(--main-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	pointer-events: none;
+	opacity: 0;
+	/* animation: loadPage 2s ease-in-out ; */
+}
+
+@keyframes loadPage {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.hero__title {
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 5px;
+
+	background-image: var(--root-gradient);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.hero__text {
+	font-size: 14px;
+	margin-bottom: 54px;
+}
+
+.hero__btn {
+	padding: 12px 16px;
+	border-radius: 10px;
+	color: #fff;
+	background-image: var(--root-gradient);
+	margin-bottom: 50px;
+}
+
+.header__items {
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	display: flex;
+	align-items: center;
+}
+
+.head__icon {
+	padding: 12px;
+	border-radius: 10px;
+	border: 1px solid #7474bf;
+	margin-right: 10px;
+}
+
+.head__location-attr {
+	font-size: 12px;
+	line-height: 22px;
+	color: #808493;
+}
+
+.head__location-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #131a34;
+}
+
+.head__profile {
+	width: 40px;
+	height: 40px;
+	border: 5px solid #348ac7;
+	border-radius: 50%;
+
+	margin-left: auto;
+}
+
+.filter__title {
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.filter__title span {
+	color: #6679c0;
+}
+
+.filter__form-field {
+	width: 65%;
+	padding: 14px 20px;
+	margin-right: 10px;
+	border-radius: 10px;
+	outline: none;
+}
+
+.filter__form-submit {
+	padding: 14px;
+	border-radius: 10px;
+	background-image: var(--root-gradient);
+	color: #fff;
+	border: none;
+}
+
+.filter__mark {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+}
+
+.filter__mark-item {
+	padding: 15px 23px;
+	border-radius: 10px;
+	border: 1px solid gray;
+	text-align: center;
+}
+
+.filter__mark-item img {
+	margin-bottom: 5px;
+}
+
+.filter__mark-item-icon {
+	padding: 13px;
+	border-radius: 10px;
+	border: 1px solid gray;
+}
+
+.products__head {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.products__head-title {
+	font-weight: bold;
+	font-size: 16px;
+	color: #131a34;
+}
+
+.products__head-view {
+	font-size: 14px;
+	color: #6679c0;
+}
+
+.products__wrapper-item {
+	border-radius: 10px;
+	box-shadow: 0px 8px 30px 0px #00000038;
+	margin-bottom: 20px;
+	padding: 20px;
+	display: block;
+}
+.products__wrapper-item > img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.products__wrapper-info,
+.products__wrapper-params {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.products__wrapper-info {
+	margin-bottom: 8px;
+}
+
+.products__wrapper-info-title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #131a34;
+}
+
+.products__wrapper-info-rate {
+	font-size: 14px;
+	color: #131a34;
+}
+.products__wrapper-info > img {
+	margin-left: auto;
+	margin-right: 7px;
+}
+
+.products__wrapper-params-title {
+	font-size: 14px;
+	color: #808493;
+}
+
+.products__wrapper-params-price {
+	color: #808493;
+}
+.products__wrapper-params-price span {
+	color: #6679c0;
+	font-weight: bold;
+}
+
+.presentation {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.presentation__title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #131a34;
+	margin-bottom: 25px;
+}
+
+.presentation__car {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.car-info__title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #131a34;
+	margin-bottom: 25px;
+}
+
+.car-info__wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+
+.car-info__item {
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+	padding: 25px;
+	box-sizing: border-box;
+}
+
+.car-info__icon {
+	margin-bottom: 20px;
+}
+
+.car-info__item-title {
+	font-size: 14px;
+	font-weight: bold;
+	color: #131a34;
+	margin-bottom: 10px;
+}
+
+.car-info__item-subtitle {
+	font-size: 12px;
+	color: #808493;
+}
+
+.car-info__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.car-info__price-title {
+	font-size: 12px;
+	color: #808493;
+	margin-bottom: 10px;
+}
+
+.car-info__price-value {
+	font-size: 14px;
+	color: #808493;
+}
+
+.car-info__price-value span {
+	color: #6679c0;
+	font-weight: bold;
+}
+
+.car-info__price-btn {
+	padding: 15px 22px;
+	border-radius: 10px;
+	background-image: var(--root-gradient);
+	color: #fff;
+	font-size: 18px;
+	border: none;
+}
+
+.head {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.head svg {
+	margin-bottom: 30px;
+}
+
+.head__title {
+	font-size: 20px;
+	font-weight: bold;
+	color: #131a34;
+	margin-bottom: 5px;
+}
+
+.head__subtitle {
+	font-size: 14px;
+	line-height: 22px;
+	color: #808493;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 70px;
+}
+
+.login__label {
+	position: relative;
+}
+
+.login__label:first-child {
+	margin-bottom: 20px;
+}
+.login__label:nth-child(2) {
+	margin-bottom: 10px;
+}
+
+.login__icon {
+	position: absolute;
+	left: 21px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.login__field {
+	width: 100%;
+	padding: 14px 35px 14px 54px;
+	border-radius: 10px;
+	border: none;
+	background-color: #d8d8d8;
+	box-sizing: border-box;
+}
+
+.login__field::placeholder {
+	font-size: 14px;
+	line-height: 22px;
+	color: #808493;
+}
+
+.login__forgot {
+	text-align: right;
+	font-size: 14px;
+	line-height: 22px;
+	color: #6679c0;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.login__submit {
+	border-radius: 10px;
+	border: none;
+	background-image: var(--root-gradient);
+	padding-block: 12px;
+	color: #fff;
+	line-height: 24px;
+}
+
+.login__divider {
+	font-size: 14px;
+	color: #131a34;
+	text-align: center;
+	margin-bottom: 20px;
+
+	position: relative;
+}
+
+.login__divider::after,
+.login__divider::before {
+	content: '';
+	width: 103px;
+	height: 1px;
+	background-color: #d8d8d8;
+
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.login__divider::after {
+	left: 0;
+}
+.login__divider::before {
+	right: 0;
+}
+
+.society-wrapper__btn {
+	padding: 14px;
+	background-color: #d8d8d842;
+
+	display: inline-flex;
+	align-items: center;
+
+	border: none;
+}
+
+.society-wrapper__btn svg {
+	margin-right: 25px;
+}
+
+.society-wrapper__btn span {
+	color: #131a34;
+	line-height: 22px;
+}
+
+.root-menu {
+	padding: 20px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #131a34;
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background-color: #fff;
+}
+
+.profile {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.profile__name {
+	font-size: 18px;
+	font-weight: bold;
+	color: #131a34;
+	margin-bottom: 10px;
+}
+
+.profile__edit {
+	color: #d8d8d8;
+	font-size: 14px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #00000038;
+}
+
+.profile__wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.profile__wrapper-item {
+	border-radius: 10px;
+	padding: 12px;
+	box-sizing: border-box;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+.profile__wrapper-item img {
+	margin-bottom: 10px;
+}
+
+.profile__wrapper-value {
+	color: #131a34;
+}
+
+.profile__menu {
+	margin-bottom: 250px;
+}
+
+.profile__menu-item {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	cursor: pointer;
+}
+
+.profile__menu-text {
+	font-size: 18px;
+	line-height: 22px;
+	color: #131a34;
+}
+
+.logout-btn {
+	width: 100%;
+	padding-block: 14px;
+	background-image: var(--root-gradient);
+	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	border: none;
+}

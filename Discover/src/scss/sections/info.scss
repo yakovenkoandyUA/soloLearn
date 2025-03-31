@@ -1,0 +1,49 @@
+.info {
+    @include flexbox;
+    column-gap: 232px;
+    position: relative;
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -250px;
+        left: 0;
+        right: 0;
+        height: 350px;
+        background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 77.78%);
+    }
+
+    & > * {
+        z-index: 2;
+    }
+
+    &__title {
+        @include sectionTitle;
+        font-size: 18px;
+        margin-bottom: 27px;
+    }
+    
+    &__slogan{
+        font-size: 64px;
+        font-weight: bold;
+        margin-bottom: 27px;
+        color: #fff;
+    }
+    
+    &__text {
+        font-size: 18px;
+        margin-bottom: 27px;
+        color: #fff;
+    }
+
+    &__link {
+        color: $main-color;
+        font-size: 18px;
+        font-weight: bold;
+
+        position: relative;
+    }
+
+
+}

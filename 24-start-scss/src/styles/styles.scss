@@ -1,0 +1,52 @@
+@import './helpers/reset.scss';
+@import './helpers/varibles.scss';
+@import './helpers/mixins.scss';
+
+
+
+.wrapper__title {
+    color: $main-color;
+}
+
+.list {
+    @include customFlexbox(space-between);
+}
+
+
+.list {
+    @include gridTemplate(10);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.h2 {
+    @include typography(32px);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    @include typography(24px);
+    text-decoration: underline;
+    margin-top: 40px;
+}
+
+
+
+.wrapper__title {
+    font-size: 12px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 20px;
+
+    &--red {
+        color: red;
+    }
+
+    &--green {
+        color: green;
+    }
+
+    &--dark {
+        color: gray;
+    }
+}

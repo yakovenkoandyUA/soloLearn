@@ -1,0 +1,26 @@
+.hero {
+    text-align: center;
+
+    &__title {
+        font-size:110px;
+        line-height: 135px;
+        font-weight: bold;
+        margin-bottom: 240px;
+        color: #fff;
+
+        & span {
+            color: orange;
+        }
+    }
+
+    &__more {
+        padding: 30px;
+        border-radius: 50%;
+        color: #fff;
+        border: 2px solid #fff;
+        background-color: #2e2e2a;
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+}

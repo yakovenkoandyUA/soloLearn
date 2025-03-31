@@ -1,0 +1,44 @@
+.head {
+    padding-top: 58px;
+    margin-bottom: 200px;
+
+    @include flexbox(space-between);
+
+
+    &__logo {
+        font-size: 24px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &__menu {
+        @include flexbox;
+        column-gap: 50px;
+        list-style: none;
+
+        &-link {
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    &__form {
+
+
+        &-field {
+            background-color: inherit;
+            border: none;
+            outline: none;
+            color: #fff;
+            border-bottom: 2px solid;
+            
+            &::placeholder {
+                color: rgba(255, 255, 255, .7);
+                letter-spacing: 1.2px;
+
+            }
+        }
+    }
+}

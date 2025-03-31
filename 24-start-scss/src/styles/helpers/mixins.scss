@@ -1,0 +1,28 @@
+@mixin flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+@mixin customFlexbox($horizontal, $vertical: center) {
+    display: flex;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+
+@mixin gridTemplate ($qtyColumn: 4) {
+    display: grid;
+    grid-template-columns: repeat($qtyColumn, 1fr);
+}
+
+@mixin typography($value: 16px) {
+    font-size: $value;
+    line-height: 22px;
+    color: #162D27;
+}
+// БУМ
+
+// Б - блок
+// Е - елемент
+// М - модифікатор
+

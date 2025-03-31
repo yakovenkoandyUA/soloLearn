@@ -1,0 +1,43 @@
+@mixin flexbox($horizontal: flex-start, $vertical: center) {
+	display: flex;
+	justify-content: $horizontal;
+	align-items: $vertical;
+}
+
+@mixin gridLayout($column, $gap, $size: 1fr) {
+	display: grid;
+	grid-template-columns: repeat($column, $size);
+	column-gap: $gap;
+}
+
+@mixin sectionTitle($rightLine: 'false') {
+	position: relative;
+	color: $main-color;
+	&::after {
+		content: '';
+		width: 72px;
+		height: 2px;
+
+		position: absolute;
+		left: -90px;
+		top: 50%;
+		transform: translateY(-50%);
+
+		background-color: $main-color;
+	}
+
+	@if ($rightLine == 'true') {
+		&::before {
+			content: '';
+			width: 72px;
+			height: 2px;
+
+			position: absolute;
+			right: -90px;
+			top: 50%;
+			transform: translateY(-50%);
+
+			background-color: $main-color;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+.hero {
+    margin-bottom: 700px;
+    width: 950px;
+
+    &__title {
+        @include sectionTitle;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+    }
+
+    &__slogan {
+        font-size: 80px;
+        font-weight: bold;
+        color: #fff;
+        margin-bottom: 125px;
+    }
+
+    &__scroll-down {
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        animation: downAnimation 1s alternate-reverse infinite ease-in-out;
+    }
+}   
+
+@keyframes downAnimation {
+    from {
+        transform: translateY(0);
+    }
+    
+    to {
+        transform: translateY(-40px);
+    }
+}

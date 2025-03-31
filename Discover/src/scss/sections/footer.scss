@@ -1,0 +1,52 @@
+.footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    column-gap: 180px;
+    margin-bottom: 200px;
+    &__feedback {
+
+        &-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__form {
+        @include flexbox;
+
+
+        &-field {
+            padding: 20px 15px;
+            border: none;
+            border-bottom: 1px solid#979797;
+            background-color: inherit;
+        }
+
+        &-btn {
+            padding: 25px;
+            background-color: $back-color;
+            border-radius: 8px;
+            font-weight: bold;
+            border: none;
+        }
+    }
+
+    &__item {
+
+        &-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #FFD1A0;
+            margin-bottom: 45px;
+        }
+    }
+
+    &__list-item {
+        font-size: 19px;
+        color: #fff;
+        margin-bottom: 40px;
+
+    }
+}
